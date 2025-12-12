@@ -25,3 +25,29 @@ dokect@gmail.com
 
 
 https://cucarachon.ddns.net/
+
+
+API key successfully created
+9qTlIfDQZTasEadagkSE6Z8dvVa1skn7QV_r3B3uDDLi
+
+
+Your Advocate Number: 124812
+
+--------- one cell
+
+# Save your API key to track your progress and have access to the quantum computers
+
+my_api_key = "ASKnpZ_9_XlJO0NM7b2X_gpPMrmNONGt5ADXD-Hg6szY"
+my_crn = "crn:v1:bluemix:public:quantum-computing:us-east:a/8eca569736dd4fc39dead53e400c84bf:8a41a348-0794-4aa3-847e-ed55794e3269::"
+
+from qiskit_ibm_runtime import QiskitRuntimeService
+
+QiskitRuntimeService.save_account(
+    channel="ibm_quantum_platform",
+    token=my_api_key,
+    instance=my_crn,
+    name="qgss-2025",
+    overwrite=True
+)
+
+--------- one cell
