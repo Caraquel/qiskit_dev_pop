@@ -1,0 +1,27 @@
+
+
+:~$ cd qiskit_project
+
+:~$ cd qiskit_project
+cd qiskit_dev
+
+$ python3.13 -m venv .venvca
+source .venvca/bin/activate
+
+
+# Install the core Qiskit SDK
+pip install qiskit
+
+# Install components for visualization and access to IBM Quantum hardware (Recommended)
+pip install qiskit[visualization] qiskit-ibm-runtime
+
+
+OpenAi
+javier.dominguez50@zx81.ovh
+Mytv251025FG
+
+
+dokect@gmail.com
+
+
+https://cucarachon.ddns.net/
