@@ -81,9 +81,11 @@ def save_circuit_png(qc: QuantumCircuit, path: Path):
 
 
 def save_hist_png(counts: dict, path: Path, title: str):
+    # IMPORTANT: plot_histogram returns its own Figure. Saving via plt.* can
+    # accidentally save a blank figure in some VS Code/Jupyter environments.
     fig = plot_histogram(counts)
-    plt.title(title)
-    plt.savefig(path, dpi=220, bbox_inches="tight")
+    fig.suptitle(title)
+    fig.savefig(path, dpi=220, bbox_inches="tight")
     plt.close(fig)
 
 

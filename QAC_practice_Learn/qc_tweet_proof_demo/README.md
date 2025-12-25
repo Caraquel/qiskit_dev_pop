@@ -79,3 +79,7 @@ Then paste the thread printed by:
 ```bash
 python demo.py --thread
 ```
+
+
+### Plotting note
+This project saves histograms via the Figure returned by `plot_histogram()` to avoid blank images in some VS Code/Jupyter environments.
